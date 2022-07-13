@@ -1,0 +1,50 @@
+.nav-1{
+    height: 10vh;
+    display: flex;
+    justify-content: space-between; 
+
+}
+.n-left{
+    flex: 0.3;
+    align-items: center;
+    display: flex;
+    gap: 2rem;
+}
+
+.n-l-name{
+    font-size: 1.3rem;
+    font-weight: bold;
+}
+
+.n-right{
+    display: flex;
+    flex: 1;
+    align-items: center;
+    justify-content: center;
+    font-weight: 400;
+}
+
+.n-menu{
+    flex: 10;
+    direction: rtl;
+   
+}
+.n-menu>ul{
+    display: flex;
+    gap: 2rem;
+    margin-right: 4rem;
+    list-style: none;
+}
+.n-menu>ul>li:hover{
+    cursor: pointer;
+    color: var(--orange);
+}
+
+.n-menu>ul>li{
+    font-size: 22px;
+    font-weight: 600;
+}
+
+.n-button{
+    flex: 2;
+}
