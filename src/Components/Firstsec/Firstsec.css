@@ -1,0 +1,96 @@
+.first-sec{
+    display: flex;
+    height: 77vh;
+    margin-top: 6rem;
+
+}
+
+.f-left{
+    direction: rtl;
+    display: flex;
+    position: relative;
+    flex: 1;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.f-right{
+    flex: 1;
+    position: relative;
+}
+.f-right>*{
+    position: absolute;
+    z-index: 1;
+}
+.f-right>:nth-child(1){
+    transform: scale(0.5);
+    left: -60%;
+    top: -25%;
+}
+
+.f-right>:nth-child(2){
+    top: -4.6rem;
+    transform: scale(0.67);
+    left: 2rem;
+}
+
+.f-right>:nth-child(3){
+    transform: scale(0.5);
+    left: 38%;
+}
+
+
+.f-left-name{
+    display: flex;
+    flex-direction: column;
+}
+
+.f-left-name>:nth-child(1){
+    font-size: 3rem;
+    color: var(--black);
+    font-weight: bold;
+}
+.f-left-name>:nth-child(2){
+    font-size: 3rem;
+    color: var(--orange);
+    font-weight: bold;
+}
+.f-left-name>:nth-child(3){
+    font-size: 2rem;
+    color: var(--gray);
+    font-weight: 300;
+    padding-bottom: 1rem;
+    margin-top: 10px;
+}
+.f-left-name>:nth-child(4){
+    font-size: 20px;
+   
+    font-weight: 300;
+    padding-bottom: 1rem;
+    margin-top: 10px;
+}
+.f-button{
+    width: 6rem;
+    height: 2rem;
+}
+
+.f-icons{
+    margin-top: 3rem;
+    display: flex;
+    gap: 0rem;
+
+}
+
+.f-icons>*{
+    transform: scale(0.5);
+}
+
+.f-icons>*:hover{
+    cursor: pointer;
+   
+    
+
+
+}
+
+

@@ -1,0 +1,51 @@
+.floatingdiv{
+    justify-content: space-around;
+    display: flex;
+    background: white;
+    box-shadow: var(--boxShadow);
+    border-radius: 17px;
+    align-items: center;
+padding: 0px 28px 0px 0px;
+height: 4.5rem;
+}
+
+.floatingdiv>img{
+    transform: scale(0.4);
+
+}
+.floatingdiv>span{
+    font-family: 'BROYA';
+    font-size: 20px;
+    font-weight: bold;
+    direction: rtl;
+}
+.blur{
+    position: absolute;
+    width: 22rem;
+    height: 14rem;
+    border-radius: 50%;
+    background: #edd0ff;
+    z-index: -9;
+    top:-18%;
+    left: 56%;
+    filter: blur(72px);
+
+}
+
+.F-right>:nth-child(4){
+    transform: scale(0.5);
+    top: -19%;
+    left: -14%;
+    border-radius: 50%;
+    padding: 0;
+}
+
+.sir{
+    top: -4%;
+    left: 68%;
+}
+
+.sir2{
+    top:18rem;
+    left: 0rem;
+}
