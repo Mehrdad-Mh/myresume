@@ -38,6 +38,10 @@
     transform: scale(0.5);
     left: 38%;
 }
+.f-right>:nth-child(4){
+    left: -6%;
+    top: -27%;
+}
 
 
 .f-left-name{

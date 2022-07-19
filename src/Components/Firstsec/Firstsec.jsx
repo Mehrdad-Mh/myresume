@@ -7,7 +7,7 @@ import Frontenddeveloper from '../../img/Frontenddeveloper.png';
 import yellowblobshape from '../../img/yellowblobshape.png';
 import './Firstsec.css';
 import thumbup from '../../img/thumbup.png';
-import glassesimoji from '../../img/glassesimoji.png';
+import node from '../../img/node.png';
 import crown from '../../img/crown.png';
 import FloatingDiv from '../FloatingDiv/FloatingDiv';
 import { useContext } from 'react';
@@ -18,7 +18,7 @@ const Firstsec = () => {
     const theme = useContext(themeContext);
     const darkMode = theme.state.darkMode;
 
-    const transition = {duration : 4 ,type : 'spring'}
+    const transition = {duration : 6 ,type : 'spring'}
 
     return (
         <div className='first-sec'>
@@ -31,10 +31,10 @@ const Firstsec = () => {
 
 
                     transition={transition}
-                    src={glassesimoji} alt="" />
+                    src={node} alt="" />
                 <motion.div
 
-                    initial={{ transform: 'translatex(10rem)' }}
+                    initial={{ transform: 'translatex(20rem)' }}
                     whileInView={{ transform: 'translatex(5rem)' }}
                     transition={transition}
 

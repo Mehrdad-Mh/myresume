@@ -5,14 +5,14 @@
 
   :root
   {
-    --yellow: #F5C32C;
-      --orange : #FCA61F;
+    --yellow: #ffbf00;
+      --orange : #ff9d00;
       --black : #242D49;
-      --gray : #788097;
+      --gray : #3f465c;
       --blueCard : #DDF8FE;
-      --purple: rgb(238 210 255);
+      --purple: rgb(175, 46, 255);
       --boxShadow : 0px 19px 60px rgb(0 0 0 / 8%);
-      --orangeCard: rgba(252, 166, 31, 0.45);
+      --orangeCard: rgba(23, 235, 250, 0.274);
       --smboxShadow: -79px 51px 60px rgba(0, 0, 0, 0.08);
   }
   
@@ -30,8 +30,8 @@
     color: white;
     font-size: 16px;
     padding: 8px 7px;
-    background: linear-gradient(180deg,#fdc50f 26.71%,#fb982f 99.36%);
-    box-shadow: 0px 20px 24px 3px rgba(251, 161, 40, 0.42);
+    background: linear-gradient(180deg,#ff4e50 .71%,#f9d423 99.36%);
+    box-shadow: 0px 20px 24px 3px rgba(7, 169, 233, 0.42);
   }
   
   .button:hover{

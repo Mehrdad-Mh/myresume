@@ -11,6 +11,11 @@
     gap: 2rem;
 }
 
+.nav-1>span{
+    position: absolute;
+    left: 12rem;
+    top: 50px;
+}
 .n-l-name{
     font-size: 1.3rem;
     font-weight: bold;
