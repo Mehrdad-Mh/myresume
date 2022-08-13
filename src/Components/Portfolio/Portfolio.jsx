@@ -15,7 +15,7 @@ import temp3 from '../../img/temp3.jpg'
 import { themeContext } from '../../Context';
 import { useContext } from 'react';
 import { motion } from 'framer-motion';
-import { Autoplay , Navigation , Pagination} from 'swiper';
+
 const Portfolio = () => {
     const theme = useContext(themeContext);
     const darkMode = theme.state.darkMode;

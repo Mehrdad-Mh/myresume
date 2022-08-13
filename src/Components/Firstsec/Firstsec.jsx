@@ -10,15 +10,60 @@ import thumbup from '../../img/thumbup.png';
 import node from '../../img/node.png';
 import crown from '../../img/crown.png';
 import FloatingDiv from '../FloatingDiv/FloatingDiv';
-import { useContext } from 'react';
+import { useContext, useState , useEffect } from 'react';
 import { motion } from 'framer-motion';
 import { themeContext } from '../../Context';
+
+
+
 
 const Firstsec = () => {
     const theme = useContext(themeContext);
     const darkMode = theme.state.darkMode;
 
     const transition = {duration : 6 ,type : 'spring'}
+
+    const [text, setText] = useState("");
+    const [loopNum, setLoopNum] = useState(0);
+    const [isDeleting, setIsDeleting] = useState(false);
+    const [typeSpeed, setTypeSpeed] = useState( Math.random() * 100);
+    const toRotate = ["توسعه دهنده", "طراح وبسایت", "برنامه نویس"];
+    const switchSpeed = 2000;
+
+    useEffect(() => {
+        let ticker = setInterval(() => {
+          tick();
+        }, typeSpeed);
+    
+        return () => {
+          clearInterval(ticker);
+        };
+      });
+    
+      const tick = () => {
+        let i = loopNum % toRotate.length;
+        let fullText = toRotate[i];
+        let updatedText = isDeleting
+          ? fullText.substring(0, text.length - 1)
+          : fullText.substring(0, text.length + 1);
+    
+        setText(updatedText);
+    
+        if (isDeleting) {
+          setTypeSpeed((prevSpeed) => prevSpeed / 2);
+        }
+    
+        if (!isDeleting && updatedText === fullText) {
+          setIsDeleting(true);
+          setTypeSpeed(switchSpeed);
+        } else if (isDeleting && updatedText === "" ) {
+          setIsDeleting(false);
+          setLoopNum(loopNum +1);
+          setTypeSpeed(switchSpeed);
+        }
+      };
+
+
 
     return (
         <div className='first-sec'>
@@ -55,14 +100,14 @@ const Firstsec = () => {
             </div>
             <div className='f-left'>
                 <div className='f-left-name'>
-                    <span style={{
+                    <span  style={{
                         background: darkMode ? 'black' : '',
                         color: darkMode ? 'white' : ''
                     }}>سلام</span>
                     <span style={{
-                        background: darkMode ? 'black' : '',
-                        color: darkMode ? 'white' : ''
-                    }}>من یک توسعه دهنده </span>
+                        background: darkMode ? 'black' : ''
+                        
+                    }}>من یک  {text} </span>
                     <span style={{
                         background: darkMode ? 'black' : '',
                         color: darkMode ? 'white' : ''

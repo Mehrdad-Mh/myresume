@@ -1,8 +1,11 @@
 import React from "react";
 import './Navbar.css'
+import Toggle from "../Darkmode/Darkmode";
+import {Link} from 'react-scroll'
 
 
 const Navbar = () => {
+  
     return ( 
         <div className="nav-1" id="Navbar">
            <div className="n-left">
@@ -10,23 +13,43 @@ const Navbar = () => {
                 پرتفولیو من
              </div>
            </div>
-           <span>toggle</span>
+          <Toggle/>
            <div className="n-right">
              <div className="n-menu">
                 <ul>
-                    <li>صفحه اصلی</li>
+                  <Link spy={true} to="Navbar" smooth={true} activeClass='activeClass'>
+                  <li>صفحه اصلی</li>
+                  </Link>
+                    
+                    <Link spy={true} to="Services" smooth={true}>
                     <li>مهارت ها</li>
+                    </Link>
+                    <Link spy={true} to="Portfolio" smooth={true}>
+                    <li> نمونه کار</li>
+                    </Link>
+
+                    <Link spy={true} to="Experience" smooth={true}>
                     <li>تجربیات</li>
+                    </Link>
+                   
+                    <Link spy={true} to="Testimonial" smooth={true}>
                     <li>نظرات </li>
+                    </Link>
+                   
+                    <Link spy={true} to="Contact" smooth={true}>
                     <li>ارتباط با من</li>
+                    </Link>
+                    
                 </ul>
 
              </div>
+<Link spy={true} to="Footer" smooth={true}>
+
 
              <button className='button n-button'>
                     تماس با من
              </button>
-
+             </Link>
            </div>
         </div>
      );

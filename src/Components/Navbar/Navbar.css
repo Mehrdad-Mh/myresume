@@ -40,12 +40,12 @@
     margin-right: 4rem;
     list-style: none;
 }
-.n-menu>ul>li:hover{
+.n-menu>ul>a>li:hover{
     cursor: pointer;
     color: var(--orange);
 }
 
-.n-menu>ul>li{
+.n-menu>ul>a>li{
     font-size: 22px;
     font-weight: 600;
 }

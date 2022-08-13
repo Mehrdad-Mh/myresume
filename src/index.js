@@ -4,11 +4,14 @@ import  ReactDOM  from 'react-dom';
 import {ThemeProvider} from './Context';
 
 
+
 ReactDOM.render(
 <ThemeProvider>
-<App/>
-</ThemeProvider>
-    
-    ,document.getElementById('root')
 
+
+<App/>
+
+
+</ThemeProvider>
+,document.getElementById("root")
 );

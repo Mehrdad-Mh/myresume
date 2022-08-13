@@ -18,18 +18,18 @@ const Works = () => {
 
             <div className="w-right">
                 <motion.div
-                whileInView={{transform : 'rotate(360deg)'}}
+                whileInView={{transform : 'rotate(0deg)'}}
                 transition={transition}
                 className="w-mainCircle">
                     <motion.div
-                     whileInView={{transform : 'rotate(-360deg)'}}
+                     whileInView={{transform : 'rotate(0deg)'}}
                      transition={transition}
                     className="w-secCircle">
                         <img src={NewProject} alt="" />
                     </motion.div>
 
                     <motion.div
-                      whileInView={{transform : 'rotate(-360deg)'}}
+                      whileInView={{transform : 'rotate(0deg)'}}
                       transition={transition}
                     className="w-secCircle">
                         <img src={NewProject3} alt="" />
@@ -42,7 +42,7 @@ const Works = () => {
                     </motion.div>
 
                     <motion.div
-                      whileInView={{transform : 'rotate(-360deg)'}}
+                      whileInView={{transform : 'rotate(0deg)'}}
                       transition={transition}
                     className="w-secCircle">
                         <img src={NewProject2} alt="" />

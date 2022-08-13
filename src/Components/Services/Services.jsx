@@ -8,6 +8,7 @@ import Resume from '../../img/Resume.pdf'
 import { themeContext } from '../../Context';
 import { useContext } from 'react';
 import { motion } from 'framer-motion';
+import TypeAnimation from 'react-type-animation';
 
 const Services = () => {
     const theme = useContext(themeContext);
@@ -35,15 +36,34 @@ const Services = () => {
                     whileInView={{ transform: 'translatex(0rem)' }}
                     transition={transition}
                 >شامل :</motion.span>
+
+
                 <span style={{
                     background: darkMode ? 'black' : '',
-                    color: darkMode ? 'white' : ''
-                }}>طراحی وبسایت بر پایه react و js <br />
-                    و همراهی شما تا رسیدن به اهدافتون ورضایت از خدمت ارائه شده .
+                    color: darkMode ? 'white' : ''}}>
+                     <TypeAnimation
+                     cursor={true}
+                     sequence={[' طراحی وبسایت بر پایه react و استایل دهی با بروزترین کتابخانه ها', 7000,'']}
+                     wrapper="h1"
+                     repeat = {Infinity}
+      
+                     />
+                     <TypeAnimation
+                     cursor={true}
+                     sequence={['(antd , materialdesign ) و همراهی شما تارسیدن به هدف', 10000, '']}
+                     wrapper="p"
+                     repeat = {Infinity}
+      
+                     />
+
+                       
 
 
 
                 </span>
+
+
+
                 <a href={Resume}>
                     <button className="button s-button">Download CV</button>
                 </a>
